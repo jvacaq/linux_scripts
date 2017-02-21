@@ -1,4 +1,6 @@
 #!/bin/bash
+#Script de finalización de Jboss 4.2.2
+#
 . ./shutdown.conf
 
 export PATH=$JAVA_HOME/bin:$PATH
