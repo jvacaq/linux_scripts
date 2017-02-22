@@ -9,7 +9,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 #echo JAVA_HOME=${JAVA_HOME}
 #echo PATH=${PATH}
 
-echo "Este comando ejecuta una finalización segura del servidor Jboss 4.2.2"
+echo "Este comando realiza una finalización segura del servidor Jboss 4.2.2"
 echo "El proceso puede tardar varios minutos dependiendo de la carga que tenga el servidor"
 echo -n "Desea bajar jboss 4.2.2 levantado en este servidor S/N? [N]: "
 read _continue
@@ -26,5 +26,5 @@ if [[ "$_continue" == *[Ss]* ]]; then
         echo "Jboss no se encontraba en ejecución, no se realizó ninguna acción"
     fi
 else
-    echo "No se ha realizado ninguna acción."
+    echo "No se realizó ninguna acción."
 fi
