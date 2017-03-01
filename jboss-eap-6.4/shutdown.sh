@@ -1,5 +1,5 @@
 #!/bin/bash
-#Script de finalización de Jboss-eap-6.4
+#Script de finalización de Jboss-eap-6.3
 #
 . ./shutdown.conf
 
@@ -9,10 +9,10 @@ export PATH=$JAVA_HOME/bin:$PATH
 #echo JAVA_HOME=${JAVA_HOME}
 #echo PATH=${PATH}
 
-echo "Este comando ejecuta una finalización segura del servidor Jboss-eap 6.4."
+echo "Este comando ejecuta una finalización segura del servidor Jboss-eap 6.3."
 echo "El proceso puede tardar varios minutos dependiendo de la carga que tenga el servidor"
 
-read -p "Desea iniciar el proceso de finalización de jboss-eap 6.4 que se ejecuta en este servidor S/N? [N]: " _continue
+read -p "Desea iniciar el proceso de finalización de jboss-eap 6.3 que se ejecuta en este servidor S/N? [N]: " _continue
 
 if [[ "$_continue" == *[Ss]* ]]; then
     error_count=`${JBOSS_DIR}/bin/jboss-cli.sh --connect command=shutdown 2>&1>/dev/null|grep 'Failed to connect to the controller'|wc -l`
